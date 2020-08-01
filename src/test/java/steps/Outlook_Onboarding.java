@@ -30,6 +30,7 @@ import java.util.ArrayList;
 import java.util.concurrent.TimeUnit;
 
 public class Outlook_Onboarding {
+
    public static WebDriver driver = new ChromeDriver();
    public static WebDriverWait wait =  new WebDriverWait(driver, 15);
 
@@ -102,10 +103,7 @@ public class Outlook_Onboarding {
        // Assert.assertTrue("We didn't land on the expected screen",expectedTitle.compareTo(title) == 0 );
 
        // Select selectEmail = new Select(driver.findElement(By.id("LiveDomainBoxList")));
-
-
     }
-
 
     @And("I start to create an account with account name: {string}")
     public void iStartToCreateAnAccountWithAccountName(String accountName) {
@@ -120,6 +118,7 @@ public class Outlook_Onboarding {
     public void iLandedOnThePasswordScreen() throws InterruptedException {
         iShouldBeLandedOnThePasswordScreen();
     }
+
 
     @When("I click on the {string} link")
     public void iClickOnTheLink(String link) {

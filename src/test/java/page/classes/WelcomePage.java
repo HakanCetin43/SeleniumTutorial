@@ -10,8 +10,8 @@ public class WelcomePage {
 
 
     public static WebElement createAccountButton(WebDriver driver){
-       element = driver.findElement(By.xpath("//section[@class='precis above-fold']//a"));
-       return element;
+        element = driver.findElement(By.xpath("//section[@class='precis above-fold']//a"));
+        return WelcomePage.element;
     }
 
 
